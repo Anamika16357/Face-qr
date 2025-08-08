@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Security Theater™</title>
+    <!-- External JS libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/face-api.js/0.22.2/face-api.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsqr/1.4.0/jsQR.js"></script>
+    <!-- Link to separated CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 FACIAL SECURITY THEATER™ 🤖</h1>
+            <p>The Most Over-Engineered Face & QR Scanner in the Universe</p>
+            <div class="scanning-animation"></div>
+        </div>
+
+        <div class="status-panel">
+            <div class="security-level">
+                <span>THREAT LEVEL:</span>
+                <div id="threat-level" class="threat-level level-green">SECURE</div>
+            </div>
+            <div id="current-status">🔍 Initializing Facial Recognition Matrix...</div>
+        </div>
+
+        <div class="controls">
+            <button onclick="startCamera()">🎥 START SURVEILLANCE</button>
+            <button onclick="generateQR()">📱 GENERATE SECRET QR</button>
+            <button onclick="toggleScanMode()">🔄 TOGGLE SCAN MODE</button>
+            <button onclick="runSecurityCheck()">⚡ SECURITY SCAN</button>
+            <button onclick="clearLogs()">🗑️ CLEAR LOGS</button>
+            <button onclick="panicMode()">🚨 PANIC MODE</button>
+        </div>
+
+        <div class="main-display">
+            <div class="video-section">
+                <h3>🎯 FACIAL RECOGNITION ZONE</h3>
+                <video id="video" autoplay muted playsinline></video>
+                <canvas id="overlay" style="position: absolute; top: 60px; left: 20px; pointer-events: none;"></canvas>
+            </div>
+            <div class="qr-section">
+                <h3>📊 QR CODE ANALYSIS CENTER</h3>
+                <canvas id="qr-scanner" width="400" height="300"></canvas>
+                <div class="qr-display">
+                    <canvas id="qr-generator" width="200" height="200"></canvas>
+                    <div id="qr-result">Waiting for QR data...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="biometric-display">
+            <div class="metric-card">
+                <div class="metric-value" id="face-count">0</div>
+                <div>Faces Detected</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="confidence-level">0%</div>
+                <div>AI Confidence</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="qr-scanned">0</div>
+                <div>QR Codes Scanned</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="security-score">100</div>
+                <div>Security Score</div>
+            </div>
+        </div>
+
+        <div class="ridiculous-features">
+            <h3>🎭 RIDICULOUS FEATURES ACTIVATED</h3>
+            <div id="ridiculous-status">
+                <p>✨ Quantum Face Encryption: ENABLED</p>
+                <p>🔮 Mood Detection Algorithm: ANALYZING</p>
+                <p>🎪 Circus Security Protocol: STANDBY</p>
+                <p>🦄 Unicorn Authentication: PENDING</p>
+            </div>
+        </div>
+
+        <div class="log-container">
+            <div id="security-log">
+                <div class="log-entry">🚀 System initialized. Preparing for maximum security theater...</div>
+            </div>
+        </div>
+    </div>
+    <!-- Load separated JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
