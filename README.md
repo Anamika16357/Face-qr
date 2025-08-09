@@ -71,28 +71,15 @@ For Software:
 
 # Screenshots (Add at least 3)
 ![Screenshot1](https://github.com/Anamika16357/Face-qr/blob/main/Screenshot_9-8-2025_5321_127.0.0.1.jpeg)
+
 A playful web app that fakes high-tech face detection and QR scanning with absurdly over-the-top “security” features.
 
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
 
 
 
 
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
